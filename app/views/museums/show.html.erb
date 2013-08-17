@@ -1,0 +1,9 @@
+<h1><%=@museum.name%></h1>
+
+<ul>
+<% @exhibitions.each do |exhibition| %>
+	<li><%= exhibition.name %></li>
+<% end %>
+<ul>
+
+</ul>

@@ -1,0 +1,17 @@
+<h1>Museums</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Hours</th>
+    <th>Location</th>
+  </tr>
+ 
+  <% @museum.each do |museum| %>
+    <tr>
+      <td><%= link_to museum.name, museum_path(museum) %></td>
+      <td><%= museum.hours %></td>
+       <td><%= museum.location %></td>
+    </tr>
+  <% end %>
+</table>
